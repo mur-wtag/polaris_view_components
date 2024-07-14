@@ -7,7 +7,7 @@
 
   <% if content.present? %>
     <% if @sectioned %>
-      <%= render Polaris::Modal::SectionComponent.new do %>
+      <%= render Polaris::Modal::SectionComponent.new(padding: @modal_body_arguments[:padding]) do %>
         <%= content %>
       <% end %>
     <% else %>

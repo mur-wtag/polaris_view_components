@@ -23,6 +23,7 @@ module Polaris
       small: false,
       limit_height: false,
       dialog_arguments: {},
+      modal_body_arguments: {},
       **system_arguments
     )
       @title = title
@@ -40,6 +41,7 @@ module Polaris
         classes: "Polaris-Modal-CloseButton",
         aria: {label: "Close"}
       }
+      @modal_body_arguments = modal_body_arguments
     end
 
     def system_arguments
